@@ -25,9 +25,13 @@ class ViewController: UIViewController {
 
     @IBAction func compute(sender: AnyObject) {
         let accelerate = MJAccelerate()
-
+        var ceiling:Int = (xTextField.text as NSString).integerValue;
+        var numbers = [NSNumber]()
+        for index in 1...ceiling {
+            numbers.append(NSNumber(integer: index))
+        }
         
-        let input:NSArray = [NSNumber(float: 1), NSNumber(float: 2), NSNumber(float: 3)]
+        let input:NSArray = numbers as NSArray;
         let output:NSDictionary = accelerate.pows(input)
         NSLog("output:\(output)")
         
