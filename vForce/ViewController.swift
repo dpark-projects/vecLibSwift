@@ -7,26 +7,15 @@
 //
 
 import UIKit
-import Accelerate
 
 class ViewController: UIViewController {
-
-    func pows(x: [Double], var y: Double) -> [Double] {
-        var n = Int32(x.count)
-        return withUnsafePointers(&y, &n) {
-            var z = x
-            vvpows(&z, $0, x, $1) // z,y,x,n
-            return z
-        }
-    }
+    @IBOutlet weak var xTextField: UITextField!
+    @IBOutlet weak var fxTextField: UITextField!
+    @IBOutlet weak var elapsedTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        var x:[Double] = [1, 2, 3]
-        var y:Double = 2
-        var z:[Double] = pows(x, y:y)
-        NSLog("z:\(z)")
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,6 +23,14 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func compute(sender: AnyObject) {
+        let accelerate = MJAccelerate()
 
+        
+        let input:NSArray = [NSNumber(float: 1), NSNumber(float: 2), NSNumber(float: 3)]
+        let output:NSDictionary = accelerate.pows(input)
+        NSLog("output:\(output)")
+        
+    }
 }
 

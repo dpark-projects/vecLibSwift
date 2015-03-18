@@ -14,6 +14,7 @@
 		862A8E141AB9BCB000A30F60 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 862A8E121AB9BCB000A30F60 /* LaunchScreen.xib */; };
 		862A8E201AB9BCB000A30F60 /* vForceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862A8E1F1AB9BCB000A30F60 /* vForceTests.swift */; };
 		862A8E2A1AB9BCDE00A30F60 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 862A8E291AB9BCDE00A30F60 /* Accelerate.framework */; };
+		867522F51AB9BFCE003C0AF9 /* MJAccelerate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867522F41AB9BFCE003C0AF9 /* MJAccelerate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		862A8E1E1AB9BCB000A30F60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		862A8E1F1AB9BCB000A30F60 /* vForceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vForceTests.swift; sourceTree = "<group>"; };
 		862A8E291AB9BCDE00A30F60 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		867522F41AB9BFCE003C0AF9 /* MJAccelerate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MJAccelerate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 			children = (
 				862A8E091AB9BCB000A30F60 /* AppDelegate.swift */,
 				862A8E0B1AB9BCB000A30F60 /* ViewController.swift */,
+				867522F41AB9BFCE003C0AF9 /* MJAccelerate.swift */,
 				862A8E0D1AB9BCB000A30F60 /* Main.storyboard */,
 				862A8E101AB9BCB000A30F60 /* Images.xcassets */,
 				862A8E121AB9BCB000A30F60 /* LaunchScreen.xib */,
@@ -218,6 +221,7 @@
 			files = (
 				862A8E0C1AB9BCB000A30F60 /* ViewController.swift in Sources */,
 				862A8E0A1AB9BCB000A30F60 /* AppDelegate.swift in Sources */,
+				867522F51AB9BFCE003C0AF9 /* MJAccelerate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +415,7 @@
 				862A8E251AB9BCB000A30F60 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		862A8E261AB9BCB000A30F60 /* Build configuration list for PBXNativeTarget "vForceTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +424,7 @@
 				862A8E281AB9BCB000A30F60 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
